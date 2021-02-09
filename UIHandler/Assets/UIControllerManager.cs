@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace UIHandler
 {
@@ -43,6 +44,25 @@ namespace UIHandler
                 navigation = currentSelected.NavigationUI;
                 ChangeHighlight(null, currentSelected);
             }
+        }
+
+        public void OverrideInput()
+        {
+            inputActions.UI.Disable();
+            var operation = inputActions.UI.NavigateDown.PerformInteractiveRebinding(0).OnMatchWaitForAnother(0.1f).Start();
+
+            operation.OnApplyBinding((op, path) =>
+            {
+                Debug.Log("Newly selected control path is " + path);
+
+                // If you want to detect the device that was used and
+                // decide based on that, you could do so here.
+                var device = InputControlPath.TryGetDeviceLayout(path);
+                //...
+            });
+
+            //operation.Dispose();
+            //inputActions.Dispose();
         }
 
         void AddInputs()

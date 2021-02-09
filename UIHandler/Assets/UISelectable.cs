@@ -6,7 +6,8 @@ using UnityEngine.UI;
 namespace UIHandler
 {
     [DisallowMultipleComponent]
-    public class UISelectable : MonoBehaviour, IPointerEnterHandler, IPointerClickHandler
+    [RequireComponent(typeof(Image))]
+    public abstract class UISelectable : MonoBehaviour, IPointerEnterHandler, IPointerClickHandler
     {
         [SerializeField] protected bool interactable = true;
         [SerializeField] Image targetImage;
@@ -17,7 +18,7 @@ namespace UIHandler
         [Space(8)]
         [SerializeField] NavigationUI navigation;
 
-        UIControllerManager controllerManager;
+        protected UIControllerManager controllerManager;
         Coroutine fadeCoroutine;
 
         public NavigationUI NavigationUI { get => navigation; }
