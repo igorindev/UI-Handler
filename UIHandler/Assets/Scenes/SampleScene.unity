@@ -1058,7 +1058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactable: 1
   targetImage: {fileID: 1212455824}
-  overrideManagerColors: 0
+  overrideManagerColors: 1
   highlight:
     normalColor: {r: 1, g: 1, b: 1, a: 1}
     overColor: {r: 1, g: 0, b: 0, a: 1}

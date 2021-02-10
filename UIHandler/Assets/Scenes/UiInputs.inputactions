@@ -60,6 +60,17 @@
                 },
                 {
                     "name": "",
+                    "id": "a5ea5cae-408e-4d3d-b1a7-80ab3144bbe6",
+                    "path": "<Gamepad>/leftStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controller",
+                    "action": "Navigate Down",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "8139989f-56db-4e69-8d0e-bff8fd2ed4fd",
                     "path": "<Keyboard>/a",
                     "interactions": "",
@@ -87,6 +98,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard and Mouse",
+                    "action": "Navigate Up",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8e152256-a614-423a-85e3-6859e1f66faa",
+                    "path": "<Gamepad>/leftStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controller",
                     "action": "Navigate Up",
                     "isComposite": false,
                     "isPartOfComposite": false
