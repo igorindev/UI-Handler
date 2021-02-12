@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace UIHandler
 {
-    public class UIFirst : MonoBehaviour
+    public class UISetThisAsFirst : MonoBehaviour
     {
         [SerializeField] UISelectable firtsToSelect;
 

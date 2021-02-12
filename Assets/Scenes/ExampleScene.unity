@@ -248,7 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactable: 1
   targetImage: {fileID: 423384993}
-  overrideManager: 0
+  overrideManager: 1
   transition: 0
   highlightColor:
     normal: {r: 1, g: 1, b: 1, a: 1}
@@ -1821,7 +1821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentSelected: {fileID: 0}
-  transition: 0
+  transition: 1
   highlightColor:
     normal: {r: 1, g: 1, b: 1, a: 1}
     over: {r: 1, g: 0, b: 0, a: 1}
